@@ -47,23 +47,15 @@ export default function Home() {
           </filter>
         </defs>
       </svg>
-      {/* Animated Background Image */}
+      {/* Full Page Background Image */}
       <div className="fixed inset-0 z-0 overflow-hidden">
         <div
-          className="absolute inset-0 w-full h-[300%] bg-repeat animate-scroll-up"
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://www.publicdomainpictures.net/pictures/610000/velka/seamless-floral-wallpaper-art-1715193626Gct.jpg')`,
-            backgroundSize: "600px 600px",
-            backgroundPosition: "0 0",
-          }}
-        />
-        <div
-          className="absolute inset-0 w-full h-[300%] bg-repeat animate-scroll-up"
-          style={{
-            backgroundImage: `url('https://www.publicdomainpictures.net/pictures/610000/velka/seamless-floral-wallpaper-art-1715193626Gct.jpg')`,
-            backgroundSize: "600px 600px",
-            backgroundPosition: "0 -100%",
-            animationDelay: "0s",
+            backgroundImage: `url('https://images.unsplash.com/photo-1535952548450-d7447587e733?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
           }}
         />
         {/* Subtle overlay for better text readability while preserving pattern */}
